@@ -3,12 +3,16 @@
 
 from setuptools import setup, find_packages
 
-requirements = [
-    # 'praw', 'dotenv', "click",
-    # 'memoized-property',
+PACKAGE_NAME = 'slaq'
+REQUIREMENTS = [
+    'slackclient',
+    'python-dotenv',
+    'memoized_property',
+]
+GITHUB_REQUIREMENTS = [
+    'http://github.com/mattvonrocketstein/python-loggable/tarball/master#egg=loggable',
 ]
 
-PACKAGE_NAME = 'slaq'
 setup(
     name=PACKAGE_NAME,
     version='0.1.0',
@@ -17,7 +21,8 @@ setup(
     author_email='no-reply@example.com',
     url='https://github.com/mattvonrocketstein/slaq',
     packages=find_packages(),
-    install_requires=requirements,
+    install_requires=REQUIREMENTS,
+    dependency_links=GITHUB_REQUIREMENTS,
     zip_safe=False,
     entry_points={
         'console_scripts':
