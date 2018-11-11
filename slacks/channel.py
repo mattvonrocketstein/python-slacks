@@ -1,4 +1,4 @@
-""" slaq.channel
+""" slacks.channel
 """
 
 from loggable import Loggable

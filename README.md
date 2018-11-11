@@ -1,5 +1,5 @@
 <table>
-  <tr><th><strong>python-slaq</strong></th>
+  <tr><th><strong>python-slacks</strong></th>
     <th style="padding:0px 5px;text-align:right;float:right;">
       <small><small>
       <a href=#overview>Overview</a> |
@@ -49,14 +49,14 @@ SLACK_USER_TOKEN=xoxp-some-blocks-of-numbers
 Depending on your use-case, you can provide one or both of the bot/user tokens, either in arguments when instantiating the slack client handle, or in environment variables.
 
 ```
-from slaq import Slaq
+from slacks import slacks
 
 # if you're using .env, or otherwise setting up the environment  
 # variables you can instantiate the client with no arguments at all.
-client = Slaq()
+client = slacks()
 
 # or, provide all the details directly to the constructor
-client = Slaq(bot_token=.., user_token=..)
+client = slacks(bot_token=.., user_token=..)
 ```
 
 ## Running Tests

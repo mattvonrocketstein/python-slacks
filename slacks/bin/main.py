@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-""" slaq.bin.main
+""" slacks.bin.main
 
     A command-line-interface that demos and
     exercises most of the features available.
@@ -19,7 +19,7 @@ LOGGER = get_logger(__name__)
 @click.option('--dump-channel', help='dump contents of slack channel', default=False, is_flag=True)
 @click.pass_context
 def entry(ctx, channel, dump_channel, describe_channels, msg):
-    from slaq import Slack
+    from slacks import Slack
     slack = Slack()
     err_channel_required = '--channel must be provided with this command'
     err_msg_required = '--msg must be provided with this command'

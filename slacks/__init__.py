@@ -1,4 +1,4 @@
-""" slaq
+""" slacks
 """
 
 import os
@@ -7,7 +7,7 @@ from slackclient import SlackClient
 
 from loggable import Loggable, get_logger
 from memoized_property import memoized_property
-from slaq.channel import Channel
+from slacks.channel import Channel
 
 logger = get_logger(__name__)
 path = os.path.join(os.getcwd(), '.env')
@@ -15,11 +15,11 @@ logger.debug("Loading .env from {}".format(path))
 load_dotenv(path, verbose=True)
 
 
-class Slaq(Loggable):
+class slacks(Loggable):
     """ very thin wrapper on SlackClient """
 
     def __init__(self, bot_token=None, user_token=None, **kwargs):
-        super(Slaq, self).__init__(**kwargs)
+        super(slacks, self).__init__(**kwargs)
         self.bot_token = bot_token or os.environ.get('SLACK_BOT_TOKEN')
         self.user_token = user_token or os.environ.get('SLACK_USER_TOKEN')
         if not (self.bot_token or self.user_token):
