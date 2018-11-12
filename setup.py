@@ -8,12 +8,11 @@ REQUIREMENTS = [
     'slackclient',
     'python-dotenv',
     'memoized_property',
-    'loggable',
+    'loggable==0.1.0',
 ]
 GITHUB_REQUIREMENTS = [
-    'http://github.com/mattvonrocketstein/python-loggable/tarball/master#egg=loggable',
+    'https://github.com/mattvonrocketstein/python-loggable/tarball/master#egg=loggable-0.1.0',
 ]
-
 setup(
     name=PACKAGE_NAME,
     version='0.1.0',
