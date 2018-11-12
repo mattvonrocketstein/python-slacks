@@ -1,4 +1,4 @@
-import redditdb
+import slacks
 
 
 def test_set():
