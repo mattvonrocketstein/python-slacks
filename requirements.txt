@@ -1,3 +1,4 @@
-# use whatever's mentioned in setup.py
--e .
---process-dependency-links .
+-e git+https://github.com/mattvonrocketstein/python-loggable.git@master#egg=loggable
+slackclient
+python-dotenv
+memoized_property
