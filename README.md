@@ -27,6 +27,12 @@ The best python API-wrapper I could find is also a very low-level interface, pro
 
 All of this stuff usually means I keep inventing the same abstractions over and over, hence this library.
 
+## Installation
+
+```
+pip install --process-dependency-links -e git://github.com/mattvonrocketstein/slacks.git@master#egg=slacks
+```
+
 ## Prerequisites
 
 #### Slack Tokens

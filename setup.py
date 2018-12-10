@@ -4,9 +4,15 @@
 from setuptools import setup, find_packages
 
 PACKAGE_NAME = 'slacks'
-# using requirements.txt
-REQUIREMENTS = []
-GITHUB_REQUIREMENTS = []
+REQUIREMENTS = [
+    "slackclient",
+    "python-dotenv",
+    "memoized_property",
+    "loggable==0.2.0",
+]
+GITHUB_REQUIREMENTS = [
+    'https://github.com/mattvonrocketstein/python-loggable/archive/master.zip#egg=loggable-0.2.0',
+]
 setup(
     name=PACKAGE_NAME,
     version='0.1.0',
